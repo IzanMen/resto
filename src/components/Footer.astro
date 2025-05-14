@@ -1,0 +1,114 @@
+<div class="container">
+    <footer>
+        <div>
+            <img src="/logo-white.svg" alt="Logo">
+            <p>Este es un simple texto de relleno solo esta para rellenar, y mostrar el lugar donde iria un texto real de la pagina cuando este hecha en su totalidad</p>
+        </div>
+        <div>
+            <h5>Horarios</h5>
+            <ul>
+                <li><span>Lunes</span><span>09:00 - 21:00</span></li>
+                <li><span>Martes</span><span>09:00 - 21:00</span></li>
+                <li><span>Miércoles</span><span>09:00 - 21:00</span></li>
+                <li><span>Jueves</span><span>09:00 - 21:00</span></li>
+                <li><span>Viernes</span><span>09:00 - 21:00</span></li>
+                <li><span>Sábado</span><span>09:00 - 21:00</span></li>
+                <li><span>Domingo</span><span>09:00 - 21:00</span></li>
+            </ul>
+            <h5>Teléfono</h5>
+            <p>+34 123 456 789</p>
+        </div>
+        <div>
+            <h5>Dirección</h5>
+            <p>Calle 123, Menorca, España</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d195753.21676224307!2d3.894478871340266!3d39.94935183802811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12be1f9d2cb820e9%3A0x529ac484178e77c9!2sMenorca!5e0!3m2!1ses!2ses!4v1744308026290!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+        </div>
+    </footer>
+    <div class="footer-legal">
+        <span>No almacenamos ningún dato personal ni utilizamos cookies de terceros.</span>
+        <a href="#aviso-legal">Aviso legal</a>
+        <span>Design by <a target="_blank" href="https://www.figma.com/@gomezmatias126">Matias Gomez</a> - <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></span>    
+    </div>
+</div>
+
+<style>
+    .container {
+        margin-top: 200px;
+        background-color: #333333;
+        height: auto;
+        padding: 0;
+        padding-top: 70px;
+    }
+
+    footer {
+        display: flex;
+        width: 80%;
+        max-width: 1200px;
+        margin: 0 auto;
+        justify-content: space-between;
+        gap: 50px;
+        color: #fff;
+        margin-bottom: 50px;
+    }
+
+
+    footer h5 {
+        font-size: 1.2rem;
+        color: #E76F51;
+        font-weight: 400;
+        font-family: 'Josefin Sans', sans-serif;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #fff;
+    }
+
+    footer ul {
+        list-style: none;
+        padding: 0;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer ul li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    iframe {
+        width: 300px;
+        height: 300px;
+    }
+
+    .footer-legal {
+        display: flex;
+        gap: 40px;
+        color: #fffa;
+        width: 80%;
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        margin-top: 100px;
+    }
+
+    .footer-legal a {
+        color: #fffa;
+    }
+
+    @media screen and (max-width: 1250px) {
+        .footer-legal {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 2px;
+        }
+    }
+
+    @media screen and (max-width: 1000px) {
+        footer {
+            flex-direction: column;
+            gap: 0;
+        }
+    }
+</style>

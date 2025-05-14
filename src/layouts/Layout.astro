@@ -1,11 +1,15 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/logo.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Resto</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Rancho&display=swap" rel="stylesheet">
 	</head>
 	<body>
 		<slot />
@@ -14,9 +18,12 @@
 
 <style>
 	html,
-	body {
+	body, * {
 		margin: 0;
+		padding: 0;
 		width: 100%;
 		height: 100%;
+
+		font-family: 'Libre Franklin', sans-serif;
 	}
 </style>

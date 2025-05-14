@@ -1,0 +1,156 @@
+<div class="container">
+    <section>
+        <h2>Especialidades<br><span>de la casa</span></h2>
+        <div class="especialidades especialidad-1">
+            <div>
+                <h3>Postres</h3>
+                <h4>Yogurt Griego con Semillas y Fresas</h4>
+                <p>Este es un simple texto de relleno solo esta para rellenar, y mostrar el lugar donde iria un texto real de la pagina cuando este hecha en su totalidad</p>
+                <span>7€</span>
+                <a href="#reservar">Reservar</a>
+            </div>
+            <img src="/yogurt.webp" alt="Yogurt Griego con Semillas y Fresas">
+        </div>
+        <div class="especialidades especialidad-2">
+            <img src="/yogurt.webp" alt="Yogurt Griego con Semillas y Fresas">
+            <div>
+                <h3>Postres</h3>
+                <h4>Yogurt Griego con Semillas y Fresas</h4>
+                <p>Este es un simple texto de relleno solo esta para rellenar, y mostrar el lugar donde iria un texto real de la pagina cuando este hecha en su totalidad</p>
+                <span>7€</span>
+                <a href="#reservar">Reservar</a>
+            </div>
+        </div>
+    </section>
+</div>
+
+<style>
+    .container {
+        background-color: #EFEFEF;
+        padding: 50px 0;
+        margin-bottom: 100px;
+    }
+
+    section {
+        width: 80%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    section h2 {
+        text-align: center;
+        font-family: 'Rancho', sans-serif;
+        font-size: 3rem;
+        font-weight: 300;
+        position: relative;
+    }
+
+    section h2 span {
+        color: #E76F51;
+        font-weight: 600;
+        font-size: 1.3rem;
+        font-family: 'Josefin Sans', sans-serif;
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+
+    .especialidades {
+        display: flex;
+        gap: 100px;
+        margin-bottom: 50px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .especialidades div {
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .especialidades div h3 {
+        color: #E76F51;
+        border-bottom: 1px solid #000;
+        padding-bottom: 20px;
+        font-weight: 400;
+    }
+
+    .especialidades div h4 {
+        font-size: 1.7rem;
+        font-weight: 400;
+        margin: 10px 0;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+
+    .especialidades div p {
+        font-size: .9rem;
+        font-family: 'Libre Franklin', sans-serif;
+        color: #000d;
+        font-weight: 100;
+        border-top: 1px solid #000;
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .especialidades div span {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+
+    .especialidades div a {
+        text-decoration: none;
+        color: #fff;
+        background-color: #2A9D8F;
+        width: fit-content;
+        padding: 10px 30px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px 0 #2A9D8Faa;
+    }
+
+    @media screen and (max-width: 1200px) {
+        .especialidades {
+            gap: 20px;
+        }
+
+        .especialidades img {
+            width: 400px;
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        .especialidades {
+            gap: 10px;
+        }
+
+        .especialidades img {
+            width: 300px;
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+        .especialidades {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .especialidades div {
+            width: 100%;
+            max-width: none;
+        }
+
+        .especialidades img {
+            margin-left: -10px;
+            margin-top: 20px;
+        }
+
+        .especialidad-2 {
+            flex-direction: column-reverse;
+        }
+
+        .container {
+            margin-bottom: 20px;
+        }
+    }
+    
+</style>
